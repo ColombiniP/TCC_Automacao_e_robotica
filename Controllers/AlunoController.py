@@ -7,8 +7,8 @@ def conexao():
 def cadastrarAlunos(Alunos):
     conn = conexao()
     cur = conn
-    cur.execute("INSERT INTO Alunos(nome, cpf, email, aniversario, disciplina) VALUES (?,?,?,?,?)",
-                (Alunos.nome,Alunos.cpf,Alunos.email,Alunos.aniversario,Alunos.disciplina))
+    cur.execute("INSERT INTO Alunos(nome, cpf, email, aniversario, consentimento, disciplina) VALUES (?,?,?,?,?,?)",
+                (Alunos.nome,Alunos.cpf,Alunos.email,Alunos.aniversario,Alunos.consentimento,Alunos.disciplina))
     conn.commit()
     conn.close()
 

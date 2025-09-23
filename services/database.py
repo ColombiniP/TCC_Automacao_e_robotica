@@ -9,6 +9,7 @@ with sqlite3.connect("services/alunos.db",check_same_thread=False) as connection
             cpf TEXT NOT NULL,
             email TEXT NOT NULL,
             aniversario DATE,
-            Disciplina TEXT NOT NULL)
+            consentimento BOOLEAN NOT NULL,
+            disciplina TEXT NOT NULL)
     """)
     cursor.close()
