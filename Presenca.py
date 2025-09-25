@@ -8,5 +8,4 @@ st.markdown("""
     ## Presença eletrônica
     
     Coloque sua digital
-
 """)
